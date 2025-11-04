@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPA 2: Força Azul Tocantinense - SIGMEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuração de Cores para o Tailwind, baseado no Tocantins e na 'Força Azul' */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8', /* Azul Principal */
+                        'secondary-yellow': '#FBBF24', /* Amarelo/Ouro Tocantins */
+                        'text-dark': '#1F2937', /* Cinza Escuro para texto */
+                        'bg-light': '#F9FAFB',
+                    }
+                }
+            }
+        }
+        /* Estilo para a animação do scroll (necessário para o scroll-smooth funcionar) */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Corrigir o deslocamento do scroll para compensar a barra de navegação fixa */
+        .section-padding {
+            /* Adiciona padding no topo para que o conteúdo não fique escondido sob o navbar */
+            padding-top: 100px; /* Ajuste para o tamanho da navbar */
+            margin-top: -100px; /* Move a âncora para cima */
+        }
+        
+        /* Efeito de destaque ao passar o mouse sobre as imagens */
+        .image-card:hover .image-effect {
+            box-shadow: 0 15px 25px -5px rgba(29, 78, 216, 0.5), 0 4px 6px -2px rgba(29, 78, 216, 0.3);
+            transform: translateY(-5px); 
+        }
+    </style>
+</head>
+<body class="bg-bg-light text-text-dark font-sans">
+
+    <nav class="sticky top-0 z-50 bg-primary-blue shadow-2xl">
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-center lg:justify-between items-center">
+            
+            <a href="#home" class="text-xl md:text-2xl font-bold text-black uppercase mb-2 lg:mb-0 hover:text-secondary-yellow transition duration-300 w-full lg:w-auto text-center">
+                CHAPA 2 - FATO
+            </a>
+            
+            <div class="flex flex-wrap justify-center space-x-3 md:space-x-6 text-sm font-semibold">
+                <!--!><a href="#home" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Home</a>
+                <a href="#quem-somos" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Quem Somos</a>
+                <a href="#ja-fizemos" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Já Fizemos</a>
+                <a href="#vamos-fazer" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Vamos Fazer</a>
+                <a href="#presidente" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Mensagem</a>
+                <a href="#folder" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Folder Online</a>
+                <a href="#news" class="text-black hover:text-secondary-yellow transition duration-300 p-1">News</a>
+                <a href="#contato" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Contato</a><!--!>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <div id="folder" class="section-padding"></div>
+        <section class="py-8 mb-16">
+          
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
+                
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_1.jpg" 
+                         alt="Página 1 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+                
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_2.jpg" 
+                         alt="Página 2 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_3.jpg" 
+                         alt="Página 3 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_4.jpg" 
+                         alt="Página 4 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-semibold mb-2">Vote CHAPA 2 - FATO, Força Azul Tocantinense.</p>
+            <p class="text-sm text-gray-400">&copy; 2025 CHAPA 2 - FATO. Todos os direitos reservados.</p>
+            <p class="text-xs text-gray-500 mt-1">Desenvolvido com ética, participação e transparência.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPA 2: Força Azul Tocantinense - SIGMEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuração de Cores para o Tailwind, baseado no Tocantins e na 'Força Azul' */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8', /* Azul Principal */
+                        'secondary-yellow': '#FBBF24', /* Amarelo/Ouro Tocantins */
+                        'text-dark': '#1F2937', /* Cinza Escuro para texto */
+                        'bg-light': '#F9FAFB',
+                    }
+                }
+            }
+        }
+        /* Estilo para a animação do scroll (necessário para o scroll-smooth funcionar) */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Corrigir o deslocamento do scroll para compensar a barra de navegação fixa */
+        .section-padding {
+            /* Adiciona padding no topo para que o conteúdo não fique escondido sob o navbar */
+            padding-top: 100px; /* Ajuste para o tamanho da navbar */
+            margin-top: -100px; /* Move a âncora para cima */
+        }
+        
+        /* Efeito de destaque ao passar o mouse sobre as imagens */
+        .image-card:hover .image-effect {
+            box-shadow: 0 15px 25px -5px rgba(29, 78, 216, 0.5), 0 4px 6px -2px rgba(29, 78, 216, 0.3);
+            transform: translateY(-5px); 
+        }
+    </style>
+</head>
+<body class="bg-bg-light text-text-dark font-sans">
+
+    <nav class="sticky top-0 z-50 bg-primary-blue shadow-2xl">
+        <div class="container mx-auto px-4 py-4 flex flex-wrap justify-center lg:justify-between items-center">
+            
+            <a href="#home" class="text-xl md:text-2xl font-bold text-black uppercase mb-2 lg:mb-0 hover:text-secondary-yellow transition duration-300 w-full lg:w-auto text-center">
+                CHAPA 2 - FATO
+            </a>
+            
+            <div class="flex flex-wrap justify-center space-x-3 md:space-x-6 text-sm font-semibold">
+                <a href="#home" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Home</a>
+                <a href="#quem-somos" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Quem Somos</a>
+                <a href="#ja-fizemos" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Já Fizemos</a>
+                <a href="#vamos-fazer" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Vamos Fazer</a>
+                <a href="#presidente" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Mensagem</a>
+                <a href="#folder" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Folder Online</a>
+                <!--!><a href="#news" class="text-black hover:text-secondary-yellow transition duration-300 p-1">News</a>
+                <a href="#contato" class="text-black hover:text-secondary-yellow transition duration-300 p-1">Contato</a><!--!>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="home" class="py-20 text-center bg-white rounded-xl shadow-2xl mb-16 border-t-8 border-secondary-yellow">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-primary-blue mb-4 leading-tight">
+                É FATO: <span class="text-secondary-yellow">CHAPA 2</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-text-dark font-light mb-8 max-w-3xl mx-auto">
+                **Força Azul Tocantinense** | Ética, Participação e Transparência
+            </p>
+            <div class="flex justify-center flex-wrap space-x-4">
+                <a href="#vamos-fazer" class="px-8 py-3 bg-primary-blue text-white font-semibold rounded-full hover:bg-primary-blue/90 shadow-lg transition duration-300 mb-4 md:mb-0">
+                    Nossas Propostas
+                </a>
+                <a href="#contato" class="px-8 py-3 bg-secondary-yellow text-primary-blue font-semibold rounded-full hover:bg-secondary-yellow/90 shadow-lg transition duration-300">
+                    Fale Conosco
+                </a>
+            </div>
+        </section>
+
+        <div id="quem-somos" class="section-padding"></div>
+        <section class="py-8 mb-16">
+            <h2 class="text-4xl font-bold text-center text-primary-blue mb-10 border-b-2 border-primary-blue pb-2 mx-auto max-w-xl">
+                👥 Quem Somos
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white p-8 rounded-xl shadow-xl">
+                <div class="text-lg space-y-4">
+                    <p class="font-semibold text-xl">Colegas do SIGMEP,</p>
+                    <p>Vivemos um momento decisivo para o futuro da nossa categoria. Depois de 12 anos sob a mesma gestão, o SIGMEP precisa de renovação, **transparência e coerência sindical.**</p>
+                    <p>A Chapa 2 - FATO (Força Azul TOcantinense) nasce do compromisso com a **ética, a representatividade** e o diálogo verdadeiro com a categoria.</p>
+                    <p class="font-bold text-primary-blue">Somos a união dos trabalhadores que construiu conquistas importantes e que vai resgatar o respeito e o protagonismo da categoria!</p>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-secondary-yellow">
+                    <h3 class="text-2xl font-semibold mb-3">Nossa Composição:</h3>
+                    <ul class="list-disc list-inside ml-4 text-sm md:text-base grid grid-cols-2 gap-y-1 gap-x-4">
+                        <li class="font-bold">ROMIS NOGUEIRA <span class="font-normal text-gray-600">(Presidente)</span></li>
+                        <li class="font-bold">LETÍCIA BORDIN <span class="font-normal text-gray-600">(Vice Capital)</span></li>
+                        <li>IDALECIA (Diretora Secretaria)</li>
+                        <li>EDSON (Diretor Financeiro)</li>
+                        <li>VIEIRA (Dir. Assuntos Jurídicos)</li>
+                        <li>GAMA (Vice Interior)</li>
+                        <li>EDNALDO NUNES (Dir. Secretário Adj.)</li>
+                        <li>CLECIANE (Dir. Fin. Adjunta)</li>
+                        <li>ALEXANDRO ARAÚJO (Dir. Adj. Jurídico)</li>
+                        <li>RIBAMAR (Pres. Conselho Fiscal)</li>
+                        <li>LUIZ RUFO (Vice Pres. Conselho)</li>
+                        <li>BUENO (Conselheiro Fiscal)</li>
+                        <li>MACÁRIO (Conselheiro Fiscal)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div id="ja-fizemos" class="section-padding"></div>
+        <section class="py-8 mb-16 bg-primary-blue text-white rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-bold text-center text-secondary-yellow mb-10 border-b-2 border-secondary-yellow pb-2 mx-auto max-w-xl">
+                ✅ Já Fizemos (Conquistas Históricas)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+                <div class="bg-white p-5 rounded-lg text-text-dark shadow-md hover:shadow-lg transition duration-300 border-t-4 border-secondary-yellow">
+                    <p class="font-bold text-xl text-primary-blue">Fim da Escala 24x48 e 24x72</p>
+                    <p class="text-sm mt-1">(Conquistado na GMP por Ribamar e Romis Nogueira)</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg text-text-dark shadow-md hover:shadow-lg transition duration-300 border-t-4 border-secondary-yellow">
+                    <p class="font-bold text-xl text-primary-blue">Encerramento das Escalas Vermelhas</p>
+                    <p class="text-sm mt-1">Fim das Extras 0800, sem pagamento de horas extras.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg text-text-dark shadow-md hover:shadow-lg transition duration-300 border-t-4 border-secondary-yellow">
+                    <p class="font-bold text-xl text-primary-blue">Fim das Convocações na Folga</p>
+                    <p class="text-sm mt-1">Fim das CHAMADAS GERAIS e convocações para Educação Física.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div id="vamos-fazer" class="section-padding"></div>
+        <section class="py-8 mb-16">
+            <h2 class="text-4xl font-bold text-center text-primary-blue mb-10 border-b-2 border-primary-blue pb-2 mx-auto max-w-xl">
+                🚀 Vamos Fazer (Nossas Propostas)
+            </h2>
+            <div class="bg-white p-8 rounded-xl shadow-xl grid grid-cols-1 md:grid-cols-2 gap-6">
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start text-text-dark">
+                        <span class="text-primary-blue font-extrabold mr-3 text-2xl">»</span>
+                        **Resgatar a Credibilidade:** Sindicato feito por servidores e para servidores, com autonomia.
+                    </li>
+                    <li class="flex items-start text-text-dark">
+                        <span class="text-primary-blue font-extrabold mr-3 text-2xl">»</span>
+                        **Transparência Total:** Gestão ética, com prestação de contas clara e participação ativa da categoria.
+                    </li>
+                    <li class="flex items-start text-text-dark">
+                        <span class="text-primary-blue font-extrabold mr-3 text-2xl">»</span>
+                        **Luta por Direitos:** Coragem para enfrentar os desafios e defender a progressão e o reajuste salarial.
+                    </li>
+                </ul>
+                <div class="bg-secondary-yellow/20 p-6 rounded-lg border-l-4 border-secondary-yellow text-text-dark">
+                    <p class="font-bold text-xl mb-2">Compromisso FATO:</p>
+                    <p>Defenderemos a independência do sindicato, acabando com o atrelamento a cargos comissionados do empregador. Nosso foco é **VOCÊ**, o Guarda e Policial Municipal.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="presidente" class="section-padding"></div>
+        <section class="py-8 mb-16 bg-gray-800 text-white rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-bold text-center text-secondary-yellow mb-10 border-b-2 border-secondary-yellow pb-2 mx-auto max-w-xl">
+                🎙️ Mensagem de Romis Nogueira (Presidente)
+            </h2>
+            <div class="max-w-4xl mx-auto px-6 text-lg italic text-gray-200">
+                <blockquote class="border-l-4 border-secondary-yellow pl-4">
+                    <p class="mb-4">"Colegas de Araguaína, Lagoa da Confusão, Monte do Carmo, Palmas, Porto Nacional e São Valério, contamos com vocês para escrevermos um novo capítulo - mais justo, participativo e transparente. É hora de mudar com responsabilidade."</p>
+                    <footer class="text-right text-base font-semibold text-secondary-yellow">- Romis Nogueira, Candidato a Presidente Chapa 2</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <div id="folder" class="section-padding"></div>
+        <section class="py-8 mb-16">
+            <h2 class="text-4xl font-bold text-center text-primary-blue mb-12 border-b-2 border-primary-blue pb-2 mx-auto max-w-xl">
+                📄 Folder Oficial Online
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-blue">Página 1: Apresentação e Equipe</h3>
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_1.jpg" 
+                         alt="Página 1 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+                
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-blue">Página 2: Nossos Candidatos</h3>
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_2.jpg" 
+                         alt="Página 2 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-blue">Página 3: Conquistas e Propostas</h3>
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_3.jpg" 
+                         alt="Página 3 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+
+                <div class="image-card bg-white p-4 rounded-xl shadow-lg transition duration-500 hover:shadow-2xl">
+                    <h3 class="text-xl font-semibold mb-3 text-primary-blue">Página 4: Lema e Contato</h3>
+                    <img src="1762260755025-a00fe798-3847-419a-b588-4fa16cfc6cfb_4.jpg" 
+                         alt="Página 4 da Chapa 2" 
+                         class="image-effect w-full h-auto rounded-lg shadow-xl transition duration-500">
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-lg font-semibold mb-2">Vote CHAPA 2 - FATO, Força Azul Tocantinense.</p>
+            <p class="text-sm text-gray-400">&copy; 2025 CHAPA 2 - FATO. Todos os direitos reservados.</p>
+            <p class="text-xs text-gray-500 mt-1">Desenvolvido com ética, participação e transparência.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
